@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+     <!-- font font-awesome CDN link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <style>
+        .flex{
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            background-image: url(signupimg.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            color: #dad5d5;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            /* height: ; */
+            background-position: center;
+          
+        }
+
+        h1{
+            color: #4CAF50;
+            text-align: center;
+        }
+        .container{
+            border: 1px solid whitesmoke;
+            border-radius: 5px;
+            padding: 5vw;
+            opacity: 0.9;
+            margin: 3vh;
+        }
+        .container:hover{
+            opacity: 1;
+        }
+        .button{
+            height: 4vh;
+            width: 40vw;
+            margin: 1rem 0;
+            padding: 0.5rem;
+            border: 1px solid #dad5d5;
+            border-radius: 5px;
+        }
+        .button:hover{
+            box-shadow: 2px 2px 5px  #edd9d9 ;
+        }
+        .items{
+            padding: 20px;
+            text-decoration: none;    
+        }
+        .loginbutton{
+            background-color: rgba(94, 240, 20, 0.936);
+            color: #f4f4f9;
+            font-size: 30px;
+        }
+        .skip{
+            padding: 10px;
+            font-size: 14px;
+            color: #e6e6ee;
+            background-color: #4CAF50;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        p a{
+            text-decoration: none;
+            color: #86a8eb;
+        }
+        
+        .signup a{
+            color: #f4e9e9;
+            text-decoration: none;
+        }
+        .listitem{
+            display: inline-block;
+        }
+        .footer{
+            /* margin-left: 25vw; */
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body class="flex">
+    <form action="./succespage.html" >
+        <h1>Sign up</h1>
+
+        <div class="flex container">
+        <label for="firstname"></label>
+        <input type="text" name="firstname" id="firstname" placeholder="User Name" class="button" required>
+
+        <label for="Mobilenumber"></label>
+        <input type="number" name="number" id="Mobilenumber" placeholder="Mobile number" class="button" required>
+
+        <label for="password"></label>
+        <input type="password" name="password" id="password" placeholder="Password" class="button" required>
+
+        <label for="Confirmpassword"></label>
+        <input type="password" name="Confirmpassword" id="Confirmpassword" placeholder="Confirm Password" class="button" required>
+
+        <span><label for="terms"></label>
+        <input type="checkbox" name="terms" id="terms" required>I agree to the terms and conditions</span><br><br>
+
+        <label for="signup"></label>
+        <input type="submit" value="Signup" id="signup" class="skip">
+    
+        </div>
+
+    <div class="footer"> 
+
+        <p>Already have an account..?<a href="loginpage.html">login</a></p>
+        <button type="button" class="signup skip"><a href="homepage.html" >Skip Signup</a></button>
+           
+            <div >
+                <p>Continue with</p>
+                <p class="listitem"><i class="fa-solid fa-envelope"></i><a href="#" class="items">Email</a></p>
+                <p class="listitem"><i class="fa-brands fa-facebook"></i><a href="#" class="items">Facebook</a></p>
+                <p class="listitem"><i class="fa-brands fa-google"></i><a href="#" class="items">Google</a></p>
+                <p class="listitem"><i class="fa-brands fa-square-twitter"></i><a href="#" class="items">Twitter </a></p>
+            </div>
+        
+    </div>
+</form>
+    
+</body>
+</html>
