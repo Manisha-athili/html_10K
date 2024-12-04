@@ -13,8 +13,12 @@
             background-size: cover;
             background-position: center;
             color: aliceblue;
-            font-size: 1.2rem;
+            font-size: 1rem;
+            width: 100vw;
+            height: 100vh;
+            
         }
+    
         * {
             
             box-sizing: border-box; /* Add this for better control over element sizes */
@@ -37,12 +41,23 @@
             font-size: 1.6vw;
         }
         table {
-            margin: 0 10%;
-            width: 80%; /* Set table width to 80% of the parent container */
+            margin: 2rem 0 0 30vw;
+            background-color: rgba(40, 79, 99, 0.3);
+            backdrop-filter: blur(50);
+            padding:0 2rem 2rem 2rem;
+            border-radius: 20px;
         }
+        
         th, td {
-            padding: 1vh;
+            padding: 0.5vh;
             text-align: left;
+        }
+        td:hover, td :hover{
+            box-shadow: 10px 5px 5px red;
+        }
+        .container h1{
+            margin-left: 20vw ;
+            text-decoration:underline;
         }
     </style>
 
@@ -55,8 +70,8 @@
             <table>
                 <tbody>
                     <tr> 
-                        <th><b>SDLC</b> Software Development Life Cycle</th>
-                        <th><a href="day1/day1_Methodologies.html"><button>Day 1</button></a></th>
+                        <td><b>SDLC</b> Software Development Life Cycle</th>
+                        <td><a href="day1/day1_Methodologies.html"><button>Day 1</button></a></th>
                     </tr>
                 
                     <tr>
@@ -82,12 +97,10 @@
                         <td><a href="day8/index.html" ><button>Day 8</button></a></td>
                     </tr>
                     
-
-                    <tr>
-                        <td><h1>HTML COMPLETED</h1></td>
-                    </tr>
                 </tbody>
+
             </table>
+            <h1>HTML COMPLETED</h1>
         </div>
     </div>
 </body>
